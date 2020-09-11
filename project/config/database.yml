@@ -21,12 +21,12 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: icdamconf_test
+  database: dosciconf_test
   username: dosci
   password: dosciconf
 
 production:
   <<: *default
-  database: icdamconf_prod
+  database: dosciconf_prod
   username: dosci
   password: dosciconf
