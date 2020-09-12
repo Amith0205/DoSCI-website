@@ -527,3 +527,16 @@ I, [2018-01-13T05:47:53.641830 #2326]  INFO -- : worker=0 ready
 I, [2018-01-13T05:47:53.642709 #2322]  INFO -- : master process ready
 I, [2018-01-13T05:47:53.655913 #2329]  INFO -- : worker=1 spawned pid=2329
 I, [2018-01-13T05:47:53.656028 #2329]  INFO -- : worker=1 ready
+I, [2020-09-12T09:39:48.316391 #989]  INFO -- : Refreshing Gem list
+F, [2020-09-12T09:39:53.977953 #989] FATAL -- : error adding listener addr=/home/ubuntu/DoSCI-website/project/shared/sockets/unicorn.sock
+bundler: failed to load command: unicorn (/home/ubuntu/.rbenv/versions/2.5.1/bin/unicorn)
+ArgumentError: socket=/home/ubuntu/DoSCI-website/project/shared/sockets/unicorn.sock specified but it is not a socket!
+  /home/ubuntu/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn/socket_helper.rb:131:in `bind_listen'
+  /home/ubuntu/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn/http_server.rb:241:in `listen'
+  /home/ubuntu/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn/http_server.rb:851:in `block in bind_new_listeners!'
+  /home/ubuntu/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn/http_server.rb:851:in `each'
+  /home/ubuntu/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn/http_server.rb:851:in `bind_new_listeners!'
+  /home/ubuntu/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn/http_server.rb:140:in `start'
+  /home/ubuntu/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/bin/unicorn:126:in `<top (required)>'
+  /home/ubuntu/.rbenv/versions/2.5.1/bin/unicorn:23:in `load'
+  /home/ubuntu/.rbenv/versions/2.5.1/bin/unicorn:23:in `<top (required)>'
