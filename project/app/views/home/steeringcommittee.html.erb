@@ -1,33 +1,368 @@
 <section class="sub-page" id="steeringcommittee">
   <div class="row">
-    <div class="col-md-8">
-      <div class="left">
-        <h1>Steering Committee Members</h1>
-        <hr>
-        <div class="row">
-        <% @steercompost.each do |post| %>
-          <div class="col-md-12">
-            <h3><%= post.position %><%=":"%></h3>
-                <div class="row">
-                  <% post.allmembers.each do |members| %>
-
-                    <div class="col-md-6">
-                      <div class="card">
-                         <b class="name"><%= members.name + "   "%></b> <br>
-                         <%="("%><%= members.information %><%=")"%>
-                      </div>
-                    </div>
-
-
-                    <%end%>
-                  </div>
-          </div>
-                <%end%>
-
-        </div>
-
+  <div class="col-md-8">
+  <div class="left">
+    <h1>Steering Committee Members</h1>
+    <hr>
+    <div class="row">
+      <div class="col-md-12">
+        <h3>Chief Patron(s):</h3>
+            <div class="row">
+              </div>
       </div>
+      <div class="col-md-12">
+        <h3>Patron(s):</h3>
+            <div class="row">
+
+                <div class="col-md-6">
+                  <div class="card">
+                     <b class="name">Poonam Verma   </b> <br>
+                     (Principal, SSCBS, University of Delhi)
+                  </div>
+                </div>
+
+
+              </div>
+      </div>
+      <div class="col-md-12">
+        <h3>General Chair(s):</h3>
+            <div class="row">
+
+                <div class="col-md-6">
+                  <div class="card">
+                     <b class="name">Siddhartha Bhattacharyya   </b> <br>
+                     (Principal, RCC Institute of Technolcogy, Kolkata)
+                  </div>
+                </div>
+
+
+
+                <div class="col-md-6">
+                  <div class="card">
+                     <b class="name">Valentina Emilia Balas   </b> <br>
+                     (Aurel Vlaicu University of Arad, Romania)
+                  </div>
+                </div>
+
+
+              </div>
+      </div>
+      <div class="col-md-12">
+        <h3>Honorary Chair(s):</h3>
+            <div class="row">
+
+                <div class="col-md-6">
+                  <div class="card">
+                     <b class="name">Janusz Kacprzyk   </b> <br>
+                     (Head, Intelligent Systems Laboratory, System Research Institute, Polish Academy of Sciences, Warsaw, Poland)
+                  </div>
+                </div>
+
+
+
+                <div class="col-md-6">
+                  <div class="card">
+                     <b class="name">Vaclav Snasel   </b> <br>
+                     (Rector, VSB-Technical University of Ostrava, Czech Republic)
+                  </div>
+                </div>
+
+
+              </div>
+      </div>
+      <div class="col-md-12">
+        <h3>Conference Chair(s):</h3>
+            <div class="row">
+
+                <div class="col-md-6">
+                  <div class="card">
+                     <b class="name">Aboul Ella Hassanien   </b> <br>
+                     (Cairo University, Egypt)
+                  </div>
+                </div>
+
+
+
+                <div class="col-md-6">
+                  <div class="card">
+                     <b class="name">Joel J P C Rodrigues   </b> <br>
+                     (National Institute of Telecommunications (Inatel), Brazil)
+                  </div>
+                </div>
+
+
+
+                <div class="col-md-6">
+                  <div class="card">
+                     <b class="name">R. K. Agrawal   </b> <br>
+                     (Jawaharlal Nehru University, Delhi)
+                  </div>
+                </div>
+
+
+              </div>
+      </div>
+      <div class="col-md-12">
+        <h3>Technical Program Chair(s):</h3>
+            <div class="row">
+
+                <div class="col-md-6">
+                  <div class="card">
+                     <b class="name">Victor Hugo C. de Albuquerque   </b> <br>
+                     (‎Universidade de Fortaleza, Brazil)
+                  </div>
+                </div>
+
+
+
+                <div class="col-md-6">
+                  <div class="card">
+                     <b class="name">A. K. Singh   </b> <br>
+                     (National Institute of Technology, Kurukshetra)
+                  </div>
+                </div>
+
+
+
+                <div class="col-md-6">
+                  <div class="card">
+                     <b class="name">Anil K Ahlawat   </b> <br>
+                     (KIET Group of Institutes, Ghaziabad)
+                  </div>
+                </div>
+
+
+              </div>
+      </div>
+      <div class="col-md-12">
+        <h3>Editorial Chair(s):</h3>
+            <div class="row">
+
+                <div class="col-md-6">
+                  <div class="card">
+                     <b class="name">Abhishek Swaroop   </b> <br>
+                     (Bhagwan Parshuram Institute of Technology, Delhi)
+                  </div>
+                </div>
+
+
+
+                <div class="col-md-6">
+                  <div class="card">
+                     <b class="name">Arun Sharma   </b> <br>
+                     (Indira Gandhi Delhi Technical University for Womens, Delhi.)
+                  </div>
+                </div>
+
+
+              </div>
+      </div>
+      <div class="col-md-12">
+        <h3>Publication Chair(s):</h3>
+            <div class="row">
+
+                <div class="col-md-6">
+                  <div class="card">
+                     <b class="name">Neeraj Kumar   </b> <br>
+                     (Thapar Institute of Engineering and Technology)
+                  </div>
+                </div>
+
+
+
+                <div class="col-md-6">
+                  <div class="card">
+                     <b class="name">Hari Mohan Pandey   </b> <br>
+                     (Edge Hill University, UK)
+                  </div>
+                </div>
+
+
+
+                <div class="col-md-6">
+                  <div class="card">
+                     <b class="name">Sahil Garg   </b> <br>
+                     (École de technologie supérieure, Université du Québec, Montreal, Canada)
+                  </div>
+                </div>
+
+
+              </div>
+      </div>
+      <div class="col-md-12">
+        <h3>Convener(s):</h3>
+            <div class="row">
+
+                <div class="col-md-6">
+                  <div class="card">
+                     <b class="name">Ajay Jaiswal   </b> <br>
+                     (SSCBS, University of Delhi)
+                  </div>
+                </div>
+
+
+
+                <div class="col-md-6">
+                  <div class="card">
+                     <b class="name">Sameer Anand   </b> <br>
+                     (SSCBS, University of Delhi)
+                  </div>
+                </div>
+
+
+
+                <div class="col-md-6">
+                  <div class="card">
+                     <b class="name">Ashish Khanna   </b> <br>
+                     (Maharaja Agrasen Institute of Technology (GGSIPU), New Delhi)
+                  </div>
+                </div>
+
+
+
+                <div class="col-md-6">
+                  <div class="card">
+                     <b class="name">Deepak Gupta   </b> <br>
+                     (Maharaja Agrasen Institute of Technology (GGSIPU), New Delhi)
+                  </div>
+                </div>
+
+
+
+                <div class="col-md-6">
+                  <div class="card">
+                     <b class="name">Gulshan Shrivastava   </b> <br>
+                     (National Institute of Technology Patna, India)
+                  </div>
+                </div>
+
+
+              </div>
+      </div>
+      <div class="col-md-12">
+        <h3>Co-Convener(s):</h3>
+            <div class="row">
+
+                <div class="col-md-6">
+                  <div class="card">
+                     <b class="name">Moolchand Sharma   </b> <br>
+                     (Maharaja Agrasen Institute of Technology (GGSIPU), New Delhi)
+                  </div>
+                </div>
+
+
+              </div>
+      </div>
+      <div class="col-md-12">
+        <h3>Publicity Chair(s):</h3>
+            <div class="row">
+
+                <div class="col-md-6">
+                  <div class="card">
+                     <b class="name">M. Tanveer   </b> <br>
+                     (Indian Institute of Technology, Indore, India)
+                  </div>
+                </div>
+
+
+
+                <div class="col-md-6">
+                  <div class="card">
+                     <b class="name">Jafar A. Alzubi   </b> <br>
+                     (Al-Balqa Applied University, Salt - Jordan)
+                  </div>
+                </div>
+
+
+
+                <div class="col-md-6">
+                  <div class="card">
+                     <b class="name">Hamid Reza Boveiri   </b> <br>
+                     (Sama College, IAU, Shoushtar Branch, Shoushtar, Iran)
+                  </div>
+                </div>
+
+
+              </div>
+      </div>
+      <div class="col-md-12">
+        <h3>Organising Chair(s):</h3>
+            <div class="row">
+
+                <div class="col-md-6">
+                  <div class="card">
+                     <b class="name">Kumar Bijoy   </b> <br>
+                     (SSCBS, University of Delhi)
+                  </div>
+                </div>
+
+
+
+                <div class="col-md-6">
+                  <div class="card">
+                     <b class="name">Rishi Ranjan Sahay   </b> <br>
+                     (SSCBS, University of Delhi)
+                  </div>
+                </div>
+
+
+              </div>
+      </div>
+      <div class="col-md-12">
+        <h3>Organising Team:</h3>
+            <div class="row">
+
+                <div class="col-md-6">
+                  <div class="card">
+                     <b class="name">Gurjeet Kaur   </b> <br>
+                     (SSCBS, University of Delhi)
+                  </div>
+                </div>
+
+
+
+                <div class="col-md-6">
+                  <div class="card">
+                     <b class="name">Aditya Khamparia   </b> <br>
+                     (Lovely Professional University, Punjab, India)
+                  </div>
+                </div>
+
+
+
+                <div class="col-md-6">
+                  <div class="card">
+                     <b class="name">Abhimanyu Verma   </b> <br>
+                     (SSCBS, University of Delhi)
+                  </div>
+                </div>
+
+
+
+                <div class="col-md-6">
+                  <div class="card">
+                     <b class="name">Onkar Singh   </b> <br>
+                     (SSCBS, University of Delhi)
+                  </div>
+                </div>
+
+
+
+                <div class="col-md-6">
+                  <div class="card">
+                     <b class="name">Dr Purnima Lala Mehta    </b> <br>
+                     (Assistant Professor, IILM, purnima.mehta@iilmcet.ac.in)
+                  </div>
+                </div>
+
+
+              </div>
+      </div>
+
     </div>
+
+  </div>
+</div>
     <div class="col-md-4">
       <div class="box right">
           <h1 class="custom-font">Important Dates</h1>
