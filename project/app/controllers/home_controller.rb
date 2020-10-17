@@ -22,8 +22,7 @@ class HomeController < ApplicationController
     @photogal2019 = PhotoGallery2019.all
   end
 
-  def about_institute
-    @about_institute = AboutInstitute.last.content
+  def about_aktu
     @important_dates = ImportantDate.all.sort_by &:date
 
   def awards
@@ -64,8 +63,7 @@ class HomeController < ApplicationController
 
 
 
-  def about_irdindia
-    @about_irdindia = AboutIrdind.last.content
+  def about_iet
     @important_dates = ImportantDate.all.sort_by &:date
 
   end
