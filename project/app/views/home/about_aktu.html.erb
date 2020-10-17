@@ -1,0 +1,39 @@
+
+<section class="sub-page" id="about_irdindia">
+  <div class="row">
+    <div class="col-md-8">
+      <div class="left">
+        <h1>About IRB India</h1>
+        <hr>
+        <p>
+        <b>Dr. A.P.J. Abdul Kalam Technical University (AKTU) </b>(formerly UPTU) was established by the Government of Uttar Pradesh, vide Act Amendment No. 1156(2) LXXIX-V-1-15-1(Ka), 24-2015 dated Sept 9, 2015 Uttar Pradesh Adhiniyam Sankhya 23 of 2000. Under the University Act, 'Technical Education' includes programmes of education, research and training in Engineering, Technology, Architecture, Town Planning, Pharmacy, Applied Arts & Crafts and such other programmes and areas that the central Government may in consultation with All India Council for Technical Education (AICTE) by notification in Gazette declare.
+        <br>
+        The University is affiliating in nature and its jurisdiction spans the entire state of U.P. in affiliating B.Tech., M.B.A., M.C.A., B.Arch., B. Pharma., B.H.M.C.T., M.Tech. and Ph.D. programmes in 756 colleges/institutions imparting graduate, postgraduate and doctoral level training in all government and private institutions located all over U.P. in engineering, technology, architecture, pharmacy, hotel management and catering technology as well as M.B.A. and M.C.A. programmes.
+        <br>
+        AKTU was reconstituted as "Gautam Buddha Technical University, Lucknow" and "Mahamaya Technical University, Noida" on 1st May 2010 through amendment of U.P. Govt. vide act no. 05 of 2010, Subsequently U.P. Government again combined the Gautam Buddha Technical University and Mahamaya Technical University with effect from 1st Nov. 2013 vide amendment act 21st of 2013 and reconstituted A.K.T.U. Lucknow.
+        </p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="box right">
+          <h1 class="custom-font">Important Dates</h1>
+          <hr>
+
+          <marquee behavior="" direction="up"  truespeed="true" scrolldelay = "150" onmouseover="this.stop();" onmouseout="this.start();" >
+              <% @important_dates.each do |impdate| %>
+                  <b><%= impdate.title %></b>
+                  <br>
+                  <%= impdate.date.to_date.to_formatted_s(:long_ordinal) %>
+                  <br><hr />
+
+              <% end %>
+
+
+            </marquee>
+            <span> <a href="/important_dates">Read More...</a> </span>
+
+      </div>
+    </div>
+  </div>
+
+</section>
