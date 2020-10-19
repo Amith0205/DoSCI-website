@@ -1,0 +1,39 @@
+
+<section class="sub-page" id="about_institute">
+  <div class="row">
+    <div class="col-md-8">
+        <div class="left">
+            <h1>Previous Doctoral Symposium (DoSCI-2020)</h1>
+            <p>
+            First Doctoral Symposium on Computational Intelligence (DoSCI-2020) has been organized with third International Conference in innovative Computing and Communication (ICICC-2020) and was organized at Shaheed Sukhdev College of Business Studies in association with National institute of Technology Patna and University of Valladolid, Spain on 22nd February 2020 at New Delhi, India. DoSCI-2020 received 50 papers from approximately 125 authors and a total of 9 papers were accepted with an acceptance ratio of 18%. All accepted papers were published in Springer’s Studies in Computational Intelligence, an scopus indexed series. 
+            </p>
+            <h2>DoSCI 2020 Proceeding Link: </h2>
+            <ul class="list-group">
+                <li class="list-group-item"> 
+                    <a href = "https://www.springer.com/gp/book/9789811584688" target="_blank"> https://www.springer.com/gp/book/9789811584688</a>
+                </li>
+            </ul>
+        </div>  
+    </div>
+    
+    <div class="col-md-4">
+      <div class="box right">
+          <h1 class="custom-font">Important Dates</h1>
+          <hr>
+
+          <marquee behavior="" direction="up"  truespeed="true" scrolldelay = "150" onmouseover="this.stop();" onmouseout="this.start();" >
+              <% @important_dates.each do |impdate| %>
+                  <b><%= impdate.title %></b>
+                  <br>
+                  <%= impdate.date.to_date.to_formatted_s(:long_ordinal) %>
+                  <br><hr />
+
+              <% end %>
+            </marquee>
+            <span> <a href="/important_dates">Read More...</a> </span>
+
+      </div>
+    </div>
+  </div>
+</section>
+
