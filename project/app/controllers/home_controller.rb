@@ -171,7 +171,7 @@ class HomeController < ApplicationController
     @response= session[:response]
   end
 
-  def previous_conferences
+  def previous_doctoral_symposium
     @important_dates = ImportantDate.all.sort_by &:date
   end
 
