@@ -1,0 +1,37 @@
+
+<section class="sub-page" id="about_institute">
+<div class="row">
+  <div class="col-md-8">
+    <div class="left">
+      <h1>About Institute</h1>
+      <hr>
+      <p>
+      Institute of Engineering and Technology, Lucknow (here after called “IET) (popularly known as the-“Engineering College” in Lucknow) is one of the premier and top ranked institute among all technical institutions associated/affiliated to Dr. A. P. J. Abdul Kalam Technical University, Lucknow (here after called “AKTU”). IET was established by the government of Uttar Pradesh in 1984 as a society governed Institute. The Institute is financed by Government of Uttar Pradesh and is being administered by the Executive Council of AKTU.
+      <br>
+      IET Lucknow was started as the ‘Faculty of Engineering and Technology’ of University of Lucknow. Initially in the year 1984 it offered B. Tech. Degree in three programs namely Computer Science and Engineering, Electrical Engineering and Electronics & Communication Engineering. In the subsequent year, two more programs i.e. B. Tech. in Civil Engineering and B. Tech. in Mechanical Engineering came into existence. The Campus was developed by Uttar Pradesh Rajkiya Nirman Nigam Ltd (UPRNN) on a 100-acre (0.40 km2) land provided by the government of Uttar Pradesh. IET campus comprises of Administrative Blocks, Academic Blocks, Boys’ and Girls’ Hostels and nearly 100 residences for Teaching and Non-Teaching Staff Members. Lucknow Development Authority (LDA) provided required support for construction of external roads, electric supply, drainage and sewage for the Institute.
+      </p>
+    </div>
+
+  </div>
+  <div class="col-md-4">
+    <div class="box left">
+        <h1 class="custom-font">Important Dates</h1>
+        <hr>
+
+        <marquee behavior="" direction="up"  truespeed="true" scrolldelay = "150" onmouseover="this.stop();" onmouseout="this.start();" >
+            <% @important_dates.each do |impdate| %>
+                <b><%= impdate.title %></b>
+                <br>
+                <%= impdate.date.to_date.to_formatted_s(:long_ordinal) %>
+                <br><hr />
+
+            <% end %>
+
+
+          </marquee>
+          <span> <a href="/important_dates">Read More...</a> </span>
+
+    </div>
+  </div>
+</div>
+</section>
