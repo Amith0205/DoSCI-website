@@ -5,16 +5,48 @@
         <h1>Downloads </h1>
         <hr>
         <div class="row">
-        
-          <%@downloads.each do |download|%>
           <div class="col-md-6">
             <div class="card">
-              <%=link_to url_for(controller: "home", action: "download", filename: download.download_file) do %>
-              <%=download.file_name.titleize%> <i class="fa fa-download" aria-hidden="true"></i>
-              <%end%>
+              <a href="http://icicc-conf.com/download?filename=Manuscript+guidelines+for+English+books.pdf">
+              Manu Script Guidelines <i class="fa fa-download" aria-hidden="true"></i>
+              </a>            
             </div>
           </div>
-          <%end%>
+          <div class="col-md-6">
+            <div class="card">
+              <a href="http://icicc-conf.com/download?filename=Checklist+%281%29.pdf">
+              Checklist <i class="fa fa-download" aria-hidden="true"></i>
+              </a>            
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card">
+              <a href="http://icicc-conf.com/download?filename=Paper_template_ICICC_Elsevier.docx">
+              Elsevier Word Template <i class="fa fa-download" aria-hidden="true"></i>
+              </a>            
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card">
+              <a href="http://icicc-conf.com/download?filename=Springer+Word+Template.zip">
+              Springer Word Template <i class="fa fa-download" aria-hidden="true"></i>
+              </a>            
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card">
+              <a href="http://icicc-conf.com/download?filename=Springer+LaTeX+Template.zip">
+              Springer La Tex Template <i class="fa fa-download" aria-hidden="true"></i>
+              </a>            
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card">
+              <a href="http://icicc-conf.com/download?filename=Book_Contributor_EN+%28Limited%29+v1.1.docx">
+              Consent To Publish Form Springer <i class="fa fa-download" aria-hidden="true"></i>
+              </a>            
+            </div>
+          </div>
         </div>
       </div>
     </div>

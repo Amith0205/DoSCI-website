@@ -52,7 +52,7 @@ Rails.application.routes.draw do
   get '/abstract' => "home#abstract"
   post 'home/abstract/abstract_post' => 'home#abstract_post'
 
-  get '/conference_venue' => "home#conference_venue"
+  get '/symposium_venue' => "home#conference_venue"
   get '/important_dates' => "home#important_dates"
 
 
