@@ -169,9 +169,16 @@ class HomeController < ApplicationController
     @response= session[:response]
   end
 
-  def previous_doctoral_symposium
+  def dosci_2020
     @important_dates = ImportantDate.all.sort_by &:date
   end
+
+  def dosci_2021
+    @important_dates = ImportantDate.all.sort_by &:date
+  end
+  # def previous_doctoral_symposium
+  #   @important_dates = ImportantDate.all.sort_by &:date
+  # end
 
   def special_submission_post
     # byebug
