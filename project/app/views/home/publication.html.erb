@@ -8,30 +8,18 @@
         </p>
 
       <h3>Publications</h3>
-        <%# <h5 class="text-justify">
-          <b>Transactions on Emerging Telecommunications Technologies (ETT), Wiley [Special
-          Issue on “Deep Learning Based Industrial Internet of Things Applications”]
-          Indexing: SCIE IF 1.25
-          </b>
-          <br>
-          <br>
-          <b>SN Applied Science, Springer [Topical Collection on “Recent trends on Edge-Fog
-          Computation Paradigms for Internet of Things in Energy Domain&quot;]
-          Indexing: ESCI, WoS
-          </b>
-        </h5> %>
-      <!--
+        
+
       <% @publication.each do |publish| %>
-      <div class="col-md-12">
-        <div class="card">
-          <b><%= publish.title %></b> <br>
-          <a href="<%= publish.weblink %>"><%= truncate publish.weblink %></a> <br>
-          <%= publish.description %>
+        <div class="col-md-12">
+          <div class="card">
+            <b><%= publish.title %></b> <br>
+            <a href="<%= publish.weblink %>"><%= truncate publish.weblink %></a> <br>
+            <%= publish.description %>
+          </div>
         </div>
-      </div>
-        <% end %>
--->
-<div class="card"><b>Comming Soon!</b></div>
+      <% end %>
+
 
       </div>
     </div>
