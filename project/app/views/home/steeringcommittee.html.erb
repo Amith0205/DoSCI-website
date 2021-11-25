@@ -14,7 +14,9 @@
                 <div class="col-md-6">
                   <div class="card">
                      <b class="name"><%= members.name + "   "%></b> <br>
-                     <%="("%><%= members.information %><%=")"%>
+                     <%if members.information%>
+                      <%="("%><%= members.information %><%=")"%>
+                     <%end%>
                   </div>
                 </div>
                 <%end%>
