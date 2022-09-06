@@ -26,6 +26,7 @@ Rails.application.routes.draw do
   # get '/previous_doctoral_symposium' => "home#previous_doctoral_symposium"
   get '/dosci_2020' => "home#dosci_2020"
   get '/dosci_2021' => "home#dosci_2021"
+  get '/dosci_2022' => "home#dosci_2022"
   get '/doctoral_symposium' => "home#doctoral_symposium"
   get '/poster_symposium' => "home#poster_symposium"
   get '/about_jan_wyzykowski_university' => "home#about_jan_wyzykowski_university"
